@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichi Ai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="brand">
+        <img src="ichi.jpg" alt="Ichi Logo" class="logo-image">
+        
+        <div>
+            <h2 style="font-size: 1.1rem;">Ichi Ai</h2>
+            <div style="font-size: 0.7rem; color: #00b894;">● Online</div>
+        </div>
+    </div>
+    
+    <button id="info-btn" class="header-btn">
+        <i class="fa-solid fa-circle-info"></i>
+    </button>
+</header>
+
+<div id="chat-box">
+    <div class="message ai">
+        <div class="avatar ai"><i class="fa-solid fa-bolt"></i></div>
+        <div class="bubble">Halo! Saya Ichi. Ada yang bisa saya bantu hari ini?</div>
+    </div>
+</div>
+
+<div class="input-area">
+    <div class="input-wrapper">
+        <textarea id="inp" rows="1" placeholder="Ketik pesan..."></textarea>
+        <button id="btn"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+    <div style="text-align: center; margin-top: 10px; font-size: 0.65rem; color: #555;">Powered by SyarifCode</div>
+</div>
+
+<div id="info-modal" class="modal-overlay">
+    <div class="modal-box">
+        <button id="close-modal" class="close-btn">&times;</button>
+        
+        <div class="modal-header">
+            <img src="ichi.jpg" class="logo-large-img">
+            <h2>Tentang Ichi Ai</h2>
+            <p>Asisten AI Pintar & Ramah</p>
+        </div>
+
+        <div class="modal-body">
+            <p>Halo! Saya Ichi. Saya dibuat untuk membantu menjawab pertanyaanmu, menulis kode, hingga memberi saran kreatif. Jangan ragu untuk bertanya!</p>
+            
+            <div class="social-section">
+                <h3>Hubungi Developer</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/dyat_xd" target="_blank" class="soc-link instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" class="soc-link linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/syarifcode" target="_blank" class="soc-link github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/6289636065083" target="_blank" class="soc-link whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+            Versi 1.0.0 • Made with SyarifCode
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
